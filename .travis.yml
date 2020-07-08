@@ -3,7 +3,7 @@ services:
     - docker
 before_install:
     - docker build -t alex-sbk/docker-react -f Dockerfile.dev .
-
+#dsd
 script:
     - docker run -e CI=true alex-sbk/docker-react npm run test 
 
