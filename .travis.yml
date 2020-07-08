@@ -1,8 +1,6 @@
 sudo: required
 services:
     - docker
-#bdfbdfbdfbd
-
 before_install:
     - docker build -t alex-sbk/docker-react -f Dockerfile.dev .
 
@@ -20,3 +18,5 @@ script:
         branch: master
 access_key_id: $AWS_ACCESS_KEY
 secret_access_key: $AWS_SECRET_KEY
+
+
